@@ -19,15 +19,17 @@ The benchmark cohort is defined as:
 
 That yields 14 peers.
 
-## Raw data
+## Data sources
 
-The `data/` folder contains the bundled source files used in the build:
+The `data/` folder contains the following datasets:
 
-- `HDR25_Composite_indices_complete_time_series.csv` — UNDP HDR 2025 composite time series
-- `WB_WDI_SP_DYN_LE00_IN_WIDEF.csv` — World Bank life expectancy
-- `WB_WDI_SH_DYN_MORT_WIDEF.csv` — World Bank under-5 mortality
-- `WB_GS_WIDEF.csv` — World Bank Gender Statistics (used here for tertiary enrollment)
-- `WB_HNP_WIDEF.csv` — World Bank Health Nutrition and Population data (used here for maternal mortality)
+| File | Source | Indicator(s) | URL |
+|------|--------|--------------|-----|
+| `HDR25_Composite_indices_complete_time_series.csv` | UNDP Human Development Report 2025 | HDI, life expectancy, mean/expected years of schooling, GNI per capita (1990–2023) | https://hdr.undp.org/data-center/documentation-and-downloads |
+| `WB_WDI_SP_DYN_LE00_IN_WIDEF.csv` | World Bank WDI | Life expectancy at birth (SP.DYN.LE00.IN) | https://data.worldbank.org/indicator/SP.DYN.LE00.IN |
+| `WB_WDI_SH_DYN_MORT_WIDEF.csv` | World Bank WDI | Under-5 mortality rate (SH.DYN.MORT) | https://data.worldbank.org/indicator/SH.DYN.MORT |
+| `WB_GS_WIDEF.csv` | World Bank Gender Statistics | Tertiary enrollment, gross (SE.TER.ENRR) | https://data.worldbank.org/indicator/SE.TER.ENRR |
+| `WB_HNP_WIDEF.csv` | World Bank HNP | Maternal mortality ratio (SH.STA.MMRT) | https://data.worldbank.org/indicator/SH.STA.MMRT |
 
 ## Rebuild
 
